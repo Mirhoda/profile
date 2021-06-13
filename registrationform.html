@@ -1,0 +1,113 @@
+<!-- Registration page -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Registration Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/registration.css">
+  
+  <h3>REGISTRATION FORM</h3>
+</head>
+
+<body>
+  <div class="container">
+    <table align="center" cellpadding="10">
+
+      <!--- First Name ---------------------------------------------------------->
+      <tr>
+        <td>FIRST NAME <span class="required">*</span></td>
+        <td><input type="text" id="firstname" name="First_Name" maxlength="30" />
+        </td>
+      </tr>
+
+      <!--- Last Name ---------------------------------------------------------->
+      <tr>
+        <td>LAST NAME <span class="required">*</span></td>
+        <td><input type="text" id="lastname" name="Last_Name" maxlength="30" />
+        </td>
+
+      </tr>
+
+      <!--- Date Of Birth -------------------------------------------------------->
+      <tr>
+        <td>DATE OF BIRTH <span class="required">*</span></td>
+
+        <td>
+          <input type="date" id="dateofbirth" name="birthday">
+        </td>
+      </tr>
+
+      <!--- Department -------------------------------------------------------->
+      <tr>
+        <td>DEPARTMENT <span class="required">*</span></td>
+        <td>
+          <select name="Department" id="department">
+            <option value="-1">Select</option>
+            <option value="Electrical & Electronics">Electrical & Electronics</option>
+            <option value="Electronics & Telecommunication">Electronics & Telecommunication</option>
+            <option value="Civil">Civil</option>
+            <option value="Mechanicle">Mechanicle</option>
+            <option value="Computer Science & IT">Computer Science & IT</option>
+          </select>
+        </td>
+      </tr>
+      <!--- Email Id ---------------------------------------------------------->
+      <tr>
+        <td>EMAIL ID <span class="required">*</span></td>
+        <td><input type="email" id="emailid" name="Email_Id" maxlength="100" /></td>
+      </tr>
+
+      <!--- Mobile Number ---------------------------------------------------------->
+      <tr>
+        <td>MOBILE NUMBER <span class="required">*</span></td>
+        <td>
+          <input type="text" id="mobilenumber" name="Mobile_Number" maxlength="10" />
+        </td>
+      </tr>
+
+      <!--- Gender ----------------------------------------------------------->
+      <tr>
+        <td>GENDER <span class="required">*</span></td>
+        <td>
+          Male <input type="radio" id="gender" name="Gender" value="Male" />
+          Female <input type="radio"  name="Gender" value="Female" />
+        </td>
+      </tr>
+      <!--- Address ---------------------------------------------------------->
+      <tr>
+        <td>ADDRESS <br /><br /><br /></td>
+        <td><textarea id="address" name="Address" maxlength="100"></textarea></td>
+      </tr>
+
+      <!--- Submit------------------------------------------------->
+      <tr>
+        <td colspan="2" align="center">
+          <input class="button" type="button" id="entry" value="Submit" onclick="return ValidateDOB();">
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="middle-container">
+  <table id="display" cellpadding="15" cellspacing="2" align="center">
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Date of Birth</th>
+      <th>Department</th>
+      <th>Email Id</th>
+      <th>Mobile Number</th>
+      <th>Gender</th>
+      <th>Address</th>
+    </tr>
+  </table>
+</div>
+<script type="text/javascript" src="data.js"></script>
+  <!-- Footer -->
+  <div class="bottom-container" align="center">
+    <p class="copyright">Made with 💗</p>
+    <p class="copyright">© 2021 Mobinul Hoda</p>
+  </div>
+</body>
+</html>

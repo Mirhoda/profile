@@ -1,0 +1,80 @@
+body {
+  background-image: url("https://images.unsplash.com/photo-1518655048521-f130df041f66?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2hpdGUlMjBkZXNrdG9wfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black;
+  font-weight: bold;
+    font-family: 'sans-serif';
+}
+
+h3 {
+  color: black;
+    font-family: 'sans-serif';
+  font-size: 25pt;
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+  font-weight: bold;
+}
+.required {
+  color: red;
+}
+.container {
+  font-size: 6rem;
+  font-family: 'sans-serif';
+  color: white;
+  font-size: 11pt;
+  font-style: normal;
+  font-weight: bold;
+  border-collapse: collapse;
+  font-weight: bold;
+  background: #0c7b93;
+  margin: auto;
+  width: 43%;
+  padding: 10px;
+  border-radius: 15px;
+  padding-bottom: 10px;
+}
+
+table.inner {
+  border: 0px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+.button {
+  border: none;
+  background-color: #04AA6D;
+  color: azure;
+border-radius: 10px;
+text-align: center;
+  font-family: 'sans-serif';
+  font-weight: bold;
+  padding: 11px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.table{
+  border: 1px solid white;
+  border-collapse: collapse;
+  padding: 15px 10px;
+}
+#middle-container{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 1em;
+    font-family: 'sans-serif';
+    min-width: 500px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+
+}
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .container, body, table.inner {
+    width: 100%;
+    margin-top: 0;
+  }
+}
